@@ -1,6 +1,7 @@
 task:
   name: CI
   freebsd_instance:
+    CPU: 1
     image_family: freebsd-13-0
   go_modules_cache:
     folder: .gomodcache
