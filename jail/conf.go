@@ -14,6 +14,9 @@ const (
 	confName       = "jail.conf"
 	configTemplate = `{{ .Name }} {
   path = "{{ .Root }}";
+  ip4 = inherit;
+  ip6 = inherit;
+  allow.raw_sockets;
   persist;
 }
 `
